@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #2F323A;
+    background-image: url(./images/pexels-max-avans-5101383.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+header {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 50px;
+    border-bottom: solid #2F323A 5px;
+    font-weight: 950;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.role-container {
+    background-color: #2f323abe;
+    color: rgba(255, 255, 255, 0.685);
+    padding: 20px;
+    border-radius: 15px;
+    width: 25%;
+    text-align: center;
+}
+
+.role-container h1 {
+    border-bottom: solid white 1px;
+    margin-bottom: 20px;
+}
+
+.role-container h2 {
+    font-size: 25px;
+}
+
+.role-container h3 {
+    font-size: 15px;
+}
+
