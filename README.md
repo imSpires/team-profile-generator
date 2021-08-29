@@ -20,6 +20,7 @@
 
   ## Media
   ![Sreenshot](assets/images/screenshot.png?raw=true)
+  https://user-images.githubusercontent.com/84648098/131268510-9888d87e-5067-464c-aab8-b2d5392b2b9b.mp4
 
   ## Objective
   To allow a user to dynamically create a Team Profile so that the user can easily manage/view team information.
