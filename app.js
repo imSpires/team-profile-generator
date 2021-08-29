@@ -8,6 +8,8 @@ const path = require('path');
 const genHTML = require('./src/generate-html');
 const { prompt } = require('inquirer');
 const teamArray = [];
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "team-profile.html")
 
 // Initial command line prompt
 const promptUser = () => {
@@ -351,7 +353,19 @@ const addIntern = () => {
 };
 
 const finishTeam = () => {
-    console.log(teamArray);
+    // console.log(teamArray);
+    console.log(`
+    ======================
+    TEAM PROFILE IS READY!
+    ======================
+    `)
+
+    //Create output dir
+    if (!fs.existsSync(OUTPUT_DIR)) {
+        fs.mkdirSync(OUTPUT_DIR);
+    }
+    fs.writeFileSync(outputPath, genHTML(teamArray), 'utf-8');
 }
 
+// Start app
 promptUser();
